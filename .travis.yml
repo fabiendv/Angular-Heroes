@@ -40,7 +40,7 @@ script:
 - echo "......."
 
 after_success:
-- firebase deploy angularheroes-2565e token $FIREBASE_TOKEN
+- firebase deploy — angularheroes-2565e —  token $FIREBASE_TOKEN
 
 
 deploy:
