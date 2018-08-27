@@ -44,7 +44,7 @@ script:
 deploy:
   provider: firebase
   skip_cleanup: true
-  token: $FIREBASE_TOKEN
+  token: "1/lsu50XUMcMVzHET6dKp5TUaRVZMjTi4j9XPN6LPwjLg"
   project: angularheroes-2565e
 
 # Uncomment to allow notifications
