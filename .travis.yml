@@ -45,7 +45,7 @@ deploy:
   provider: firebase
   skip_cleanup: true
   token: $FIREBASE_TOKEN
-  project: AngularHeroes
+  project: angularheroes-2565e
 
 # Uncomment to allow notifications
 # notifications:
