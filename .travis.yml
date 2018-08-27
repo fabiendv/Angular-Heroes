@@ -39,8 +39,8 @@ before_script:
 script:
 - echo "......."
 
-after_success:
-- firebase deploy — angularheroes-2565e —  token $FIREBASE_TOKEN
+# after_success:
+# - firebase deploy — angularheroes-2565e —  token $FIREBASE_TOKEN
 
 
 deploy:
