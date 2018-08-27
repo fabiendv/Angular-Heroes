@@ -35,8 +35,8 @@ before_script:
 # - npm update
 
 before_deploy:
-- firebase login:ci
-- travis encrypt "$FIREBASE_TOKEN" --add
+# - firebase login:ci
+- travis encrypt "1/lsu50XUMcMVzHET6dKp5TUaRVZMjTi4j9XPN6LPwjLg" --add
 
 script:
 - yarn test
@@ -45,7 +45,7 @@ deploy:
   provider: firebase
   skip_cleanup: true
   token: $FIREBASE_TOKEN
-  project: angularheroes-2565e
+  project: AngularHeroes
 
 # Uncomment to allow notifications
 # notifications:
