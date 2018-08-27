@@ -23,7 +23,7 @@ before_install:
 - sh -e /etc/init.d/xvfb start
 - set -e
 - pip install --user google-oauth2l --upgrade
-
+- npm install -g firebase-tools
 
 
 before_script:
@@ -34,6 +34,9 @@ before_script:
 # - npm install
 # - npm update
 
+before_deploy:
+- firebase login:ci
+- travis encrypt "$FIREBASE_TOKEN" --add
 
 script:
 - yarn test
