@@ -34,17 +34,18 @@ before_script:
 # - npm install
 # - npm update
 
-before_deploy:
-# - firebase login:ci
-- travis encrypt "1/lsu50XUMcMVzHET6dKp5TUaRVZMjTi4j9XPN6LPwjLg" --add
 
 script:
 - yarn test
 
+after_success:
+- firebase deploy — project angularheroes-2565e — token $FIREBASE_TOKEN
+
+
 deploy:
   provider: firebase
   skip_cleanup: true
-  token: "1/lsu50XUMcMVzHET6dKp5TUaRVZMjTi4j9XPN6LPwjLg"
+  token: $FIREBASE_TOKEN
   project: angularheroes-2565e
 
 # Uncomment to allow notifications
