@@ -36,9 +36,8 @@ before_script:
 
 
 
-
 script:
-- yarn test
+- echo "......."
 
 after_success:
 - firebase deploy — project angularheroes-2565e — token $FIREBASE_TOKEN
